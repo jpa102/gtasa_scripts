@@ -1,0 +1,173 @@
+{$CLEO .csi}
+// title: extended gang wars for mobile (.so plugin version)
+
+/*
+	IMPORTANT:
+	
+	you need these dependencies:
+		https://modsfire.com/download/Yirmpi5kVVi4doC/58438 - the main mod
+		https://modsfire.com/0UxW1Kj4G0D39xb - 2.00 version apk for the mod to work
+*/
+
+0000: nop
+0000: nop
+0000: nop
+0000: nop
+0000: nop
+
+:DISABLE_GANG_TERRITORIES
+wait 1000 ms
+0879: enable_gang_wars 0  // set to 0 to disable gang wars (also turn off the colored zones in the radar / map)
+
+:GANG_TERRITORIES
+// unused gang 9 (set this to whatever you want)
+// ocean docks
+076C: set_zone 'LDOC4' gang 8 density_to 40
+076C: set_zone 'LDOC3B' gang 8 density_to 25
+076C: set_zone 'LDOC1B' gang 8 density_to 20
+076C: set_zone 'LDOC1A' gang 8 density_to 10
+076C: set_zone 'LDOC3A' gang 8 density_to 30
+076C: set_zone 'LDOC3C' gang 8 density_to 30
+076C: set_zone 'LDOC2' gang 8 density_to 20
+
+// commerce
+076C: set_zone 'THALL1' gang 8 density_to 15
+076C: set_zone 'COM4' gang 8 density_to 40
+076C: set_zone 'COM1A' gang 8 density_to 30
+076C: set_zone 'COM1B' gang 8 density_to 30
+076C: set_zone 'COM2' gang 8 density_to 30
+076C: set_zone 'COM3' gang 8 density_to 20
+
+
+
+// unused gang 10 (set this to whatever you want)
+// bayside
+076C: set_zone 'SUNNN' gang 9 density_to 40
+
+// bayside marina
+076C: set_zone 'SUNMA' gang 9 density_to 20
+
+// el quebrados
+076C: set_zone 'ELQUE' gang 9 density_to 20
+
+// las barrancas
+076C: set_zone 'BARRA' gang 9 density_to 20
+
+// fort carson
+076C: set_zone 'CARSO' gang 9 density_to 30
+
+// tierra robada
+076C: set_zone 'ROBAD' gang 9 density_to 40
+
+
+
+// ballas
+// glen park
+076C: set_zone 'GLN1B' gang 0 density_to 40
+
+// willowfield
+076C: set_zone 'LIND4A' gang 0 density_to 20
+
+// marina
+076C: set_zone 'MAR3' gang 0 density_to 10
+
+// temple
+076C: set_zone 'SUN2' gang 0 density_to 30
+
+// conference center
+076C: set_zone 'CONF1A' gang 0 density_to 10
+076C: set_zone 'CONF1B' gang 0 density_to 10
+
+// juniper hollow
+076C: set_zone 'JUNIHO' gang 0 density_to 20
+
+// juniper hill
+076C: set_zone 'JUNIHI' gang 0 density_to 20
+
+// queens
+076C: set_zone 'WESTP1' gang 0 density_to 20
+
+
+// vagos
+// market
+076C: set_zone 'MKT1' gang 2 density_to 30
+076C: set_zone 'MKT2' gang 2 density_to 30
+076C: set_zone 'MKT3' gang 1 density_to 30
+076C: set_zone 'MKT4' gang 2 density_to 30
+
+
+
+// triads
+// the four dragons casino
+076C: set_zone 'DRAG' gang 6 density_to 40
+
+// the pink swan
+076C: set_zone 'PINK' gang 6 density_to 30
+
+// the high roller
+076C: set_zone 'HIGH' gang 6 density_to 25
+
+// pirates in men's pants
+076C: set_zone 'PIRA' gang 6 density_to 10
+
+
+
+// italian mafia
+// come-a-lot
+076C: set_zone 'LOT' gang 5 density_to 40
+
+// the camel's toe
+076C: set_zone 'CAM' gang 5 density_to 30
+
+// royal casino
+076C: set_zone 'ROY' gang 5 density_to 25
+
+// caligula's place
+076C: set_zone 'CALI1' gang 5 density_to 20
+
+// pilgrim
+076C: set_zone 'PILL1' gang 5 density_to 20
+
+// starfish casino
+076C: set_zone 'STAR1' gang 5 density_to 20
+
+// old venturas strip
+076C: set_zone 'OVS' gang 5 density_to 25
+
+// roca escalante
+076C: set_zone 'ROCE1' gang 5 density_to 25
+076C: set_zone 'ROCE2' gang 5 density_to 20
+
+// the emerald isle
+076C: set_zone 'ISLE' gang 5 density_to 20
+
+// redsands east
+076C: set_zone 'REDE3' gang 5 density_to 15
+076C: set_zone 'REDE2' gang 5 density_to 15
+
+// redsands west
+076C: set_zone 'REDW3' gang 5 density_to 20
+076C: set_zone 'REDW2' gang 5 density_to 30
+076C: set_zone 'REDW1' gang 5 density_to 25
+076C: set_zone 'STAR2' gang 5 density_to 40
+
+// las venturas airport
+076C: set_zone 'VAIR1' gang 5 density_to 20
+076C: set_zone 'VAIR2' gang 5 density_to 20
+
+// whitewood estates
+076C: set_zone 'WWE' gang 5 density_to 30
+
+// blackfield
+076C: set_zone 'BFLD1' gang 5 density_to 20
+076C: set_zone 'BFLD2' gang 5 density_to 20
+
+// lva freight depot
+076C: set_zone 'LVA1' gang 5 density_to 15
+
+
+:ENABLE_GANG_TERRITORIES
+wait 1000 ms
+0879: enable_gang_wars 1  // set to 1 to reenable gang wars (refresh the gang territory colors in the radar / map)
+
+terminate_this_custom_script
