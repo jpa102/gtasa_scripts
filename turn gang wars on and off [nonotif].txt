@@ -1,0 +1,30 @@
+{$CLEO .cs}
+script_name 'gngwrsonoff'
+
+
+:test0
+0000: nop
+0000: nop
+0000: nop
+0000: nop
+0000: nop
+
+:pressed_lk  // , or < key
+wait 0
+if
+	0AB0:   key_pressed 188 /* key , or < */
+	then
+		0879: enable_gang_wars 0
+	else jf @pressed_lk
+end
+
+:pressed_gk  // . or > key
+wait 0
+if
+	0AB0:   key_pressed 190 /* key . or > */
+	then
+		0879: enable_gang_wars 1
+	else jf @pressed_gk
+end
+
+jump @test0
