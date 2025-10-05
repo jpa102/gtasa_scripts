@@ -1,0 +1,17 @@
+{$CLEO .cs}
+// title: spawn points fix
+
+0000: nop
+0000: nop
+0000: nop
+
+// police bribe
+Pickup.Create($3373, #BRIBE, 15, 2120.0, 96.39, 39.0)
+
+// hunting rifle
+032B: $3109 = create_weapon_pickup #CUNTGUN type 15 ammo 30 at -2096.3662 -490.7279 35.5312
+
+/// extra(s)
+0213: $HEALTH = create_pickup #HEALTH type 3 at 2545.8259 -1597.6488 11.941
+
+terminate_this_custom_script
