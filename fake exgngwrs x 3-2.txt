@@ -1,0 +1,190 @@
+{$CLEO .csi}
+// title: so called "extended gang wars" for mobile platform - times 3.2 territory densities
+// info: this is different, as it combines 2 gangs in 1 territory to create a "new" color (kind of like rgb but with pgy instead)
+// .csi means it must be executed manually, and it will show up in the cleo menu
+
+// ===================================================================================
+// NOTE: like my original mod, but multiplies the density values to 3.2              ||
+//       from this, you can now clearly compare the mobile version from the          ||
+//       pc version of the mod (silent's extended gang wars)                         ||
+//                                                                                   ||
+//       optionally, you can edit the pedgrp.dat file to make it somewhat            ||
+//       "realistic" to the area you are attacking at                                ||
+// ===================================================================================
+
+
+//+++++++++++++++++++++++++++LOS SANTOS SECTION+++++++++++++++++++++++++++++++++++++++++++++
+//                                                                                         +
+//                                                                                         +
+// ballas + grove - Ocean Docks (posing as gang [9 or 10] or "russian mafia")              +
+wait 1690 //                                                                               +
+0879: enable_gang_wars 0 //                                                                +
+//                                                                                         +
+076c: set_zone 'ldoc1a' gang 0 density_to 10 // ballas                                     +
+076c: set_zone 'ldoc1b' gang 0 density_to 10 // ballas                                     +
+076c: set_zone 'ldoc2' gang 0 density_to 10 // ballas                                      +
+076c: set_zone 'ldoc3a' gang 0 density_to 15 // ballas                                     +
+076c: set_zone 'ldoc3b' gang 0 density_to 15 // ballas                                     +
+076c: set_zone 'ldoc3c' gang 0 density_to 15 // ballas                                     +
+076c: set_zone 'ldoc4' gang 0 density_to 40 // ballas                                      +
+//                                                                                         +
+076c: set_zone 'ldoc1a' gang 1 density_to 10 // grove                                      +
+076c: set_zone 'ldoc1b' gang 1 density_to 10 // grove                                      +
+076c: set_zone 'ldoc2' gang 1 density_to 10 // grove                                       +
+076c: set_zone 'ldoc3a' gang 1 density_to 15 // grove                                      +
+076c: set_zone 'ldoc3b' gang 1 density_to 15 // grove                                      +
+076c: set_zone 'ldoc3c' gang 1 density_to 15 // grove                                      +
+076c: set_zone 'ldoc4' gang 1 density_to 40 // grove                                       +
+//                                                                                         +
+// ballas + grove - Commerce (posing as gang [9 or 10] or "russian mafia")                 +
+076c: set_zone 'com1a' gang 0 density_to 10 // ballas                                      +
+076c: set_zone 'com1b' gang 0 density_to 10 // ballas                                      +
+076c: set_zone 'com2' gang 0 density_to 10 // ballas                                       +
+076c: set_zone 'com3' gang 0 density_to 13 // ballas                                       +
+076c: set_zone 'com4' gang 0 density_to 40 // ballas                                       +
+076c: set_zone 'thall1' gang 0 density_to 15 // ballas                                     +
+//                                                                                         +
+076c: set_zone 'com1a' gang 1 density_to 10 // grove                                       + 
+076c: set_zone 'com1b' gang 1 density_to 10 // grove                                       +
+076c: set_zone 'com2' gang 1 density_to 10 // grove                                        +
+076c: set_zone 'com3' gang 1 density_to 12 // grove                                        +
+076c: set_zone 'com4' gang 1 density_to 40 // grove                                        +
+076c: set_zone 'thall1' gang 1 density_to 15 // grove                                      +
+//                                                                                         +
+// vagos - el corona & little mexico (posing as "gang 8" or aztecas)                       +
+076c: set_zone 'elco1' gang 0 density_to 10 // ballas                                      +
+076c: set_zone 'elco2' gang 0 density_to 10 // ballas                                      +
+076c: set_zone 'lmex1a' gang 0 density_to 5 // ballas                                      +
+076c: set_zone 'lmex1b' gang 0 density_to 5 // ballas                                      +
+//                                                                                         +
+076c: set_zone 'elco1' gang 2 density_to 40 // vagos                                       +
+076c: set_zone 'elco2' gang 2 density_to 40 // vagos                                       +
+076c: set_zone 'lmex1a' gang 2 density_to 25 // vagos                                      +
+076c: set_zone 'lmex1b' gang 2 density_to 25 // vagos                                      +
+//                                                                                         +
+//+++++++++++++++++++++++++END OF LOS SANTOS SECTION++++++++++++++++++++++++++++++++++++++++
+
+
+//+++++++++++++++++++++++++++SAN FIERRO SECTION+++++++++++++++++++++++++++++++++++++++++++++
+//                                                                                         +
+// vagos + ballas - Esplanade North (posing as "gang 5" or da nang boys)                   +
+076c: set_zone 'espn1' gang 0 density_to 15 // ballas                                      +
+076c: set_zone 'espn2' gang 0 density_to 15 // ballas                                      +
+076c: set_zone 'espn3' gang 0 density_to 15 // ballas                                      +
+//                                                                                         +
+076c: set_zone 'espn1' gang 2 density_to 30 // vagos                                       +
+076c: set_zone 'espn2' gang 2 density_to 30 // vagos                                       +
+076c: set_zone 'espn3' gang 2 density_to 30 // vagos                                       +
+//                                                                                         +
+// vagos + ballas - Easter Basin (posing as "gang 5" or da nang boys)                      +
+076c: set_zone 'easb1' gang 0 density_to 15 // ballas                                      +
+076c: set_zone 'easb2' gang 0 density_to 15 // ballas                                      +
+//                                                                                         +
+076c: set_zone 'easb1' gang 2 density_to 30 // vagos                                       +
+076c: set_zone 'easb2' gang 2 density_to 30 // vagos                                       +
+//                                                                                         +
+// ballas - (posing as "gang 4" or san fierro rifa)                                        +
+076c: set_zone 'doh2' gang 0 density_to 25 // ballas                                       +
+076c: set_zone 'garc' gang 0 density_to 50 // ballas                                       +
+076c: set_zone 'thea3' gang 0 density_to 25 // ballas                                      +
+076c: set_zone 'battp' gang 0 density_to 30 // ballas                                      +
+//                                                                                         +
+// ballas + vagos - (posing as "gang 7" or san fierro triads)                              +
+076c: set_zone 'thea1' gang 0 density_to 13 // ballas                                      +
+076c: set_zone 'china' gang 0 density_to 40 // ballas                                      +
+076c: set_zone 'calt' gang 0 density_to 13 // ballas                                       +
+//                                                                                         +
+076c: set_zone 'thea1' gang 2 density_to 12 // vagos                                       +
+076c: set_zone 'china' gang 2 density_to 30 // vagos                                       +
+076c: set_zone 'calt' gang 2 density_to 12 // vagos                                        +
+//                                                                                         +
+//                                                                                         +
+//+++++++++++++++++++++++++END OF SAN FIERRO SECTION++++++++++++++++++++++++++++++++++++++++
+
+
+//++++++++++++++++++++++++++++LAS VENTURAS SECTION++++++++++++++++++++++++++++++++++++++++++
+//                                                                                         +
+// ballas + grove - Most parts of Las Venturas (posing as "gang 6" or italian mafia)       +
+// ["1st" area]                                                                            +
+076c: set_zone 'cali1' gang 0 density_to 40 // ballas                                      +
+076c: set_zone 'roy' gang 0 density_to 15 // ballas                                        +
+076c: set_zone 'cam' gang 0 density_to 13 // ballas                                        +
+076c: set_zone 'lot' gang 0 density_to 10 // ballas                                        +
+076c: set_zone 'pill1' gang 0 density_to 13 // ballas                                      +
+076c: set_zone 'cali2' gang 0 density_to 13 // ballas                                      +
+//                                                                                         +
+076c: set_zone 'cali1' gang 1 density_to 40 // grove                                       + 
+076c: set_zone 'roy' gang 1 density_to 15 // grove                                         +
+076c: set_zone 'cam' gang 1 density_to 12 // grove                                         +
+076c: set_zone 'lot' gang 1 density_to 10 // grove                                         +
+076c: set_zone 'pill1' gang 1 density_to 12 // grove                                       +
+076c: set_zone 'cali2' gang 1 density_to 12 // grove                                       +
+//                                                                                         +
+// ["2nd" area]                                                                            +
+076c: set_zone 'ggc1' gang 0 density_to 10 // ballas                                       +
+076c: set_zone 'bfld1' gang 0 density_to 10 // ballas                                      +
+076c: set_zone 'bfld2' gang 0 density_to 10 // ballas                                      +
+076c: set_zone 'wwe' gang 0 density_to 13 // ballas                                        +
+076c: set_zone 'pint' gang 0 density_to 13 // ballas                                       +
+076c: set_zone 'wwe1' gang 0 density_to 13 // ballas                                       +
+076c: set_zone 'redw1' gang 0 density_to 15 // ballas                                      +
+076c: set_zone 'redw2' gang 0 density_to 40 // ballas                                      +
+076c: set_zone 'redw3' gang 0 density_to 10 // ballas                                      +
+076c: set_zone 'vair1' gang 0 density_to 13 // ballas                                      +
+//                                                                                         +
+076c: set_zone 'ggc1' gang 1 density_to 10 // grove                                        +
+076c: set_zone 'bfld1' gang 1 density_to 10 // grove                                       +
+076c: set_zone 'bfld2' gang 1 density_to 10 // grove                                       +
+076c: set_zone 'wwe' gang 1 density_to 12 // grove                                         +
+076c: set_zone 'pint' gang 1 density_to 12 // grove                                        +
+076c: set_zone 'wwe1' gang 1 density_to 12 // grove                                        +
+076c: set_zone 'redw1' gang 1 density_to 15 // grove                                       +
+076c: set_zone 'redw2' gang 1 density_to 40 // grove                                       +
+076c: set_zone 'redw3' gang 1 density_to 10 // grove                                       +
+076c: set_zone 'vair1' gang 1 density_to 12 // grove                                       +
+//                                                                                         +
+// ["3rd" area]                                                                            +
+076c: set_zone 'ovs' gang 0 density_to 13 // ballas                                        +
+076c: set_zone 'jte3' gang 0 density_to 13 // ballas                                       +
+076c: set_zone 'roce2' gang 0 density_to 15 // ballas                                      +
+076c: set_zone 'roce1' gang 0 density_to 30 // ballas                                      +
+076c: set_zone 'isle' gang 0 density_to 13 // ballas                                       +
+076c: set_zone 'jtn2' gang 0 density_to 10 // ballas                                       +
+076c: set_zone 'jtn3' gang 0 density_to 10 // ballas                                       +
+076c: set_zone 'jtn4' gang 0 density_to 10 // ballas                                       +
+076c: set_zone 'rede3' gang 0 density_to 10 // ballas                                      +
+076c: set_zone 'rede2' gang 0 density_to 10 // ballas                                      +
+076c: set_zone 'rede1' gang 0 density_to 10 // ballas                                      +
+076c: set_zone 'cree' gang 0 density_to 13 //                                              +
+//                                                                                         +
+076c: set_zone 'ovs' gang 1 density_to 12 // grove                                         +
+076c: set_zone 'jte3' gang 1 density_to 12 // grove                                        +
+076c: set_zone 'roce2' gang 1 density_to 15 // grove                                       + 
+076c: set_zone 'roce1' gang 1 density_to 30 // grove                                       +
+076c: set_zone 'isle' gang 1 density_to 12 // grove                                        +
+076c: set_zone 'jtn2' gang 1 density_to 10 // grove                                        +
+076c: set_zone 'jtn3' gang 1 density_to 10 // grove                                        +
+076c: set_zone 'jtn4' gang 1 density_to 10 // grove                                        +
+076c: set_zone 'rede3' gang 1 density_to 10 // grove                                       +
+076c: set_zone 'rede2' gang 1 density_to 10 // grove                                       +
+076c: set_zone 'rede1' gang 1 density_to 10 // grove                                       +
+076c: set_zone 'cree' gang 1 density_to 12 // grove                                        +
+//                                                                                         +
+// ballas + vagos - (posing as "gang 7" or san fierro triads)                              +
+076c: set_zone 'pira' gang 0 density_to 10 // ballas                                       +
+076c: set_zone 'high' gang 0 density_to 15 // ballas                                       +
+076c: set_zone 'pink' gang 0 density_to 20 // ballas                                       +
+076c: set_zone 'drag' gang 0 density_to 40 // ballas                                       +
+076c: set_zone 'strip1' gang 0 density_to 13 // ballas                                     +
+//                                                                                         +
+076c: set_zone 'pira' gang 2 density_to 10 // vagos                                        +
+076c: set_zone 'high' gang 2 density_to 10 // vagos                                        +
+076c: set_zone 'pink' gang 2 density_to 10 // vagos                                        +
+076c: set_zone 'drag' gang 2 density_to 30 // vagos                                        +
+076c: set_zone 'strip1' gang 2 density_to 12 // vagos                                      +
+//                                                                                         +
+//                                                                                         +
+//+++++++++++++++++++++++++++++++END OF LAS VENTURAS SECTION++++++++++++++++++++++++++++++++
+wait 1690
+0879: enable_gang_wars 1
+terminate_this_custom_script
