@@ -1,0 +1,23 @@
+{$CLEO .csi}
+// title: gang weapons - csi format for /channel/UCnyhA_SNuti_B3OVen5kxTQ
+
+0000: nop
+0000: nop
+0000: nop
+0000: nop
+0000: nop
+
+wait 2000 ms  // wait for 2 seconds
+
+0237: set_gang 0 weapons_to 22 29 28  // ballas
+0237: set_gang 1 weapons_to 32 29 25  // grove street families
+0237: set_gang 2 weapons_to 24 32 22  // vagos
+0237: set_gang 3 weapons_to 22 28 32  // san fierro rifa
+0237: set_gang 4 weapons_to 22 28 30  // da nang boys
+0237: set_gang 5 weapons_to 24 27 29  // italian mafia
+0237: set_gang 6 weapons_to 22 32 30  // triads
+0237: set_gang 7 weapons_to 22 28 25  // aztecas
+0237: set_gang 8 weapons_to 30 28 25  // unused gang 9
+0237: set_gang 9 weapons_to 22 32 33  // unused gang 10
+
+terminate_this_custom_script
